@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont_header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont_header_qi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/w_show.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="w_header">
+			<a id="w_h_a"  href="">
+				<img src="img/sf.png"/>
+			</a>
+			<ul id="w_h_ul1">
+				<li>
+					<a href="">首页</a>
+					
+				</li>
+				<li><a href="">物流</a></li>
+				<li><a href="">金融</a></li>
+				<li>
+					<a href="">成功案列</a>
+					<div>
+						<ul>
+							<li><a href="">3C电子行业</a></li>
+							<li><a href="">医药行业</a></li>
+							<li><a href="">生鲜行业</a></li>
+							<li><a href="">快消行业</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="">服务支持</a>
+					<div>
+						<ul>
+							<li><a href="">我要寄件</a></li>
+							<li><a href="">运单追踪</a></li>
+						</ul>
+						<ul>
+							<li><a href="">运费时效查询</a></li>
+							<li><a href="">收寄范围查询</a></li>
+							<li><a href="">服务网点查询</a></li>
+							<li><a href="">收寄标准查询</a></li>
+							<li><a href="">更多内容查询</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="">可持续发展</a>
+					<div>
+						<ul>
+							<li><a href="">企业治理</a></li>
+							<li><a href="">人才伙伴</a></li>
+							<li><a href="">绿色创新</a></li>
+							<li><a href="">社会关怀</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="">顺丰控股投资者关系</a>
+					<div>
+						<ul>
+							<li><a href="">公司治理</a></li>
+							<li><a href="">公司公告</a></li>
+							<li><a href="">定期报告</a></li>
+							<li><a href="">投资者联络</a></li>
+							<li><a href="">投资者关系日历</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="">关于我们</a>
+					<div>
+						<ul>
+							<li><a href="">关于顺丰</a></li>
+							<li><a href="">新闻资讯</a></li>
+							<li><a href="">服务公告</a></li>
+							<li><a href="">推广专区</a></li>
+							<li><a href="">会员权益</a></li>
+							<li><a href="">人才招聘</a></li>
+							<li><a href="">集团采购</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul id="w_h_ul2">
+				<li>
+					<a href=""><span class="iconfont icon-zhuanjifenxinzhuce w_header_zhuce"></span>快速登录/注册</a>
+				</li>
+				<li>
+					<img src="img/五星红旗.png"/>
+					<div>
+						<ul>
+							<li><a href="">中国内地 Chinese Mainland | 简 EN</a></li>
+							<li><a href="">中国香港/中国澳門 HongKong China /Macau China | 繁 简 EN</a></li>
+							<li><a href="">中國台灣 Taiwan China | 繁 EN</a></li>
+							<li><a href="">新加坡 Singapore | EN 简</a></li>
+							<li><a href="">韩国 Korea | 한국어 简 EN</a></li>
+							<li><a href="">马来西亚 Malaysia | EN 简</a></li>
+							<li><a href="">日本 Japan | 日本語 简 EN</a></li>
+							<li><a href="">美国/加拿大 United States/Canada | EN 简</a></li>
+							<li><a href="">俄罗斯 Russia | русский 简 EN</a></li>
+							<li><a href="">英国 United Kingdom | EN 简</a></li>
+							<li><a href="">泰国 Thailand | ภาษาไทย 简 EN</a></li>
+							<li><a href="">越南 Vietnam | Tiếng Việt 简 EN</a></li>
+							<li><a href="">澳大利亚/新西兰 Australia/New Zealand | EN 简</a></li>
+							<li><a href="">法国 France | Français 简 EN</a></li>
+							<li><a href="">德国 Germany | 简 EN</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--头部下方轮播图-->
+		<div id="w_show">
+			<ul id="ul">
+				<li><img src="img/shunfeng1.jpg" alt="" /></li>
+				<li><img src="img/shunfeng2.jpg" alt="" /></li>
+				<li><img src="img/shunfeng3.jpg" alt="" /></li>
+			</ul>
+			<ul id="ul2">
+				<li style="background: #f60;"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+<!--轮播图下方导航-->
+
+
+<!--show轮播图的jq代码-->
+<script>
+			var ul = document.getElementById("ul");
+//			var btn = document.getElementsByTagName("span");
+			var show = document.getElementById("show");
+			var lis = document.getElementById("ul2").children;
+//			.children   由子级元素组成数组
+			var i=0;
+			var timer;
+			function go(){
+				i++;
+				if(i==3){
+					i = 0;
+				}
+//				移动一张图片宽度
+				ul.style.left = -1362*i+"px";
+				for(var j=0;j<lis.length;j++){
+					lis[j].style.background = "white";
+				}
+				lis[i].style.background = "#f60";
+			}
+			timer = setInterval("go()",1000);
+			go();
+			show.onmouseover=function(){
+				clearInterval(timer);
+			}
+			show.onmouseout=function(){
+				timer = setInterval("go()",1000);
+			}
+//			左右按钮功能
+			btn[0].onclick=function(){
+				i--;
+				if(i==-1){
+					i=2;
+				}
+				ul.style.left = -1362*i+"px";
+				for(var j=0;j<lis.length;j++){
+					lis[j].style.background = "white";
+				}
+				lis[i].style.background = "#f60";
+			}
+			btn[1].onclick=function(){
+				i++;
+				if(i==3){
+					i = 0;
+				}
+				ul.style.left = -1362*i+"px";
+				for(var j=0;j<lis.length;j++){
+					lis[j].style.background = "white";
+				}
+				lis[i].style.background = "#f60";
+			}
+			
+			for(var j=0;j<lis.length;j++){
+				lis[j].setAttribute("index",j);
+				lis[j].onclick=function(){
+					i = this.getAttribute("index");
+					for(var j=0;j<lis.length;j++){
+						lis[j].style.background = "white";
+					}
+					this.style.background = "#f60";
+					ul.style.left = -1362*i+"px";
+				}
+			}
+		</script>
+		
+		
+	</body>
+</html>
