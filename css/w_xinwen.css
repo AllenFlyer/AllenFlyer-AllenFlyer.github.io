@@ -1,0 +1,82 @@
+#w_xinwen{
+	width: 100%;
+	height: 550px;
+	position: relative;
+	background: white;
+	opacity: 0.9;
+	/*box-sizing: border-box;*/
+	margin-top: 20px;
+}
+
+#w_xinwen>.w_c_title{
+	/*position: absolute;*/
+	height: 120px;
+	text-align: center;
+	/*margin-top: 20px;*/
+}
+#w_xinwen>.w_c_title>h1{
+	/*display: block;
+	top: 20px;*/
+}
+#w_xinwen>.w_c_title>span{
+	display: block;
+	margin-top: 20px;
+}
+#w_xinwen>.w_c_title>a{
+	/*margin-left: 50px;*/
+	position: absolute;
+	right: 70px;
+	/*top: 50px;*/
+	text-decoration: none;
+	color: #e13d4e;
+}
+#w_xinwen>.w_x_new{
+	width: 100%;
+	/*position: absolute;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+	/*left: 50%;
+	right: 50%;*/
+	/*text-align: center;*/
+}
+#w_xinwen>.w_x_new>a{
+	width: 310px;
+	height: 350px;
+	text-decoration: none;
+	float: left;
+	margin-left: 70px;
+	
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+#w_xinwen>.w_x_new>a>img{
+	width: 310px;
+	height: 204px;
+}
+#w_xinwen>.w_x_new>a>div{
+	width: 290px;
+	height: 98px;
+	padding: 10px;
+	white-space: normal;
+	background: gainsboro;
+	/*opacity: 0.6;*/
+}
+#w_xinwen>.w_x_new>a>div>span{
+	color: black;
+	font-size: 20px;
+}
+#w_xinwen>.w_x_new>a>div>p{
+	/*display: block;*/
+	height: 36px;
+	font-size: 14px;
+	color: black;
+}
+#w_xinwen>.w_x_new>a:hover>div{
+	background: #E13D4E;
+}
+#w_xinwen>.w_x_new>a:hover>div>span{
+	color: white;
+}
+#w_xinwen>.w_x_new>a:hover>div>p{
+	color: white;
+}

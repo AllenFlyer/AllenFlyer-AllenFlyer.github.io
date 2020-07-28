@@ -1,0 +1,58 @@
+/*中间红色运单跟踪等的导航栏*/
+#w_red_nav{
+	width: 100%;
+	height: 98px;
+	background: #E13D4E;
+	color: white;
+	/*border: 1px solid red;*/
+	/*padding-left:5%;
+	padding-right: 5%;*/
+}
+#w_red_nav>ul{
+	width: 90%;
+	height: 98px;
+	margin: 0px auto;
+}
+#w_red_nav>ul>li{
+	width: 20%;
+	height: 98px;
+	line-height: 98px;
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	position: relative;
+}
+#w_red_nav>ul>li>a{
+	text-decoration: none;
+	color: white;
+}
+#w_red_nav .yundan:before,#w_red_nav .youji:before,#w_red_nav .yunfei:before,#w_red_nav .wangdian:before,#w_red_nav .shouji:before{
+	font-size: 30px;
+	position: absolute;
+}
+#w_red_nav .yundan:before{
+	left: 25%;
+}
+#w_red_nav .youji:before{
+	left: 25%;
+}
+#w_red_nav .yunfei:before{
+	left: 20%;
+}
+#w_red_nav .wangdian:before{
+	left: 20%;
+}
+#w_red_nav .shouji:before{
+	font-size: 35px;
+	left: 20%;
+}
+#w_red_nav>ul>li>span{
+	/*竖杠不能变细*/
+	font-weight: 100;
+	float: right;
+}
+
+#w_red_nav>ul>li:hover,#w_red_nav>ul>li:hover>a{
+	background: white;
+	color: #E13D4E;
+}
